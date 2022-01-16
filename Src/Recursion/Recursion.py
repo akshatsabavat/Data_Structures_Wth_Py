@@ -55,6 +55,7 @@ powerOf5_Rec : int = toThePower_Rec(5,numberSub_Rec)
 print(powerOf5_Rec)
 
 def findFactorial(n):
+    assert n >=0 and int(n) == n, 'Makes sure the number is positive and an integer'
     # if n == 1:
     #     return 1
     # elif n == 0:  
@@ -64,3 +65,12 @@ def findFactorial(n):
         return n * findFactorial(n - 1)
 
 print(findFactorial(10))
+
+def fibonnaciOfNumber(n):
+    assert n >= 0 and int(n) == n
+    if n in [0,1]:
+        return n
+    else:
+        return fibonnaciOfNumber(n-1) + fibonnaciOfNumber(n-2)
+    
+print(fibonnaciOfNumber(-1))
