@@ -67,7 +67,7 @@ def findFactorial(n):
 print(findFactorial(10))
 
 def fibonnaciOfNumber(n):
-    assert n >= 0 and int(n) == n
+    assert n >= 0 and int(n) == n, 'Variable can only be a +ve integer'
     if n in [0,1]:
         return n
     else:
