@@ -20,7 +20,7 @@ def factorial(n):
 
 print(factorial(7))
 
-#Problem -- 2 (Product of an array)
+#Problem -- 3 (Product of an array)
 arrayProduct = array('i',[1,2,3,10])
 
 def productOfArray(arr):
@@ -30,3 +30,5 @@ def productOfArray(arr):
     return product
 
 print(productOfArray(arrayProduct))
+
+#Problem -- 2 (Product of an array)
