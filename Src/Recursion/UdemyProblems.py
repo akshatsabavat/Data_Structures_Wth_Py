@@ -1,5 +1,6 @@
 from array import *
 from ast import Num
+import re
 
 #Problem -- 1 (Power of Number)
 def powerOfNumber(number:int, power:int):
@@ -41,3 +42,12 @@ def recursiveRange(n):
         return n + recursiveRange(n-1)
 
 print(recursiveRange(6))
+
+#Problem -- 5 (Fibonnaci)
+def fibonnaci(n):
+    if n in [0,1]:
+        return n
+    else:
+        return fibonnaci(n-2) + fibonnaci(n-1)
+
+print(fibonnaci(10))
