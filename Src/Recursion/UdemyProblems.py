@@ -1,7 +1,6 @@
+from array import *
+
 #Problem -- 1 (Power of Number)
-import re
-
-
 def powerOfNumber(number:int, power:int):
     if power == 0:
         return 1
@@ -21,3 +20,13 @@ def factorial(n):
 
 print(factorial(7))
 
+#Problem -- 2 (Product of an array)
+arrayProduct = array('i',[1,2,3,10])
+
+def productOfArray(arr):
+    product = 1 #Looping variable
+    for i in arr:
+        product = product * i
+    return product
+
+print(productOfArray(arrayProduct))
