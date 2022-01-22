@@ -3,7 +3,8 @@
    
     Logic 1 : If we divide a number by 10 we will get a split of the two numbers given that we return an integer variable
                like 54/10 Reminder = 4 and quotient = 5 similarly 112/10 will give Q = 11 and R = 2, Hence we keep recursively 
-               calling the f(n) = n%10 + f(n/10) with a base case of n == 0 return 0"""
+               calling the f(n) = n%10 + f(n/10) with a base case of n == 0 return 0
+               whole idea is to keep addind the reminders and recursivly call the remaining numbers divided by 10"""
     
 def sumOfDigits(n):
     assert n >=0 and int(n) == n, 'The number must be a positive integer'
