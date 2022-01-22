@@ -12,6 +12,7 @@ def powerOfNumber(number:int, power:int):
 
 print(powerOfNumber(5,10))
 
+#Problem -- 2 (Factorial)
 def factorial(n):
     if n in [0,1]:
         return 1
