@@ -1,4 +1,5 @@
 from array import *
+from ast import Num
 
 #Problem -- 1 (Power of Number)
 def powerOfNumber(number:int, power:int):
@@ -31,4 +32,12 @@ def productOfArray(arr):
 
 print(productOfArray(arrayProduct))
 
-#Problem -- 2 (Product of an array)
+#Problem -- 4 (Recursive Range adds numbers from 0 till the number in the parameter)
+
+def recursiveRange(n):
+    if n == 0:
+        return 0
+    else:
+        return n + recursiveRange(n-1)
+
+print(recursiveRange(6))
