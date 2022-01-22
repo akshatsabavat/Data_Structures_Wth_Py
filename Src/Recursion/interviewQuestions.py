@@ -14,7 +14,7 @@ def sumOfDigits(n):
 
 print(sumOfDigits(139))
 
-"""Question 2: Find Power of a number using recursion (--Note: Ensure the exponent is a positive integer)
+"""Question 2: Find Power of a number using recursion (Note: Ensure the exponent is a positive integer)
    
    Logic 2: Taking a look at x^y x being an integer and y being the power its further broken down in the following way
               x^y = x * x^(y-1)
