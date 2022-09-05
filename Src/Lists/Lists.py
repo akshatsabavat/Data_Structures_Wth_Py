@@ -42,9 +42,21 @@ listSum(integers)
 
 #insertion at the end --> o(n), insertion at the beginning --> o(n), insert anywhere --> o(n) , space complexity for all o(1)
 #same for delete
-
 integersWha = [1,2,3,4]
 integers.insert(2,22)
 integers.append(29)
 integers.extend(integersWha)
 print(integers)
+
+#linear search of element in list time complexity --> o(n), space --> complexity --> o{1}
+def linearSearch(valueTBF, listTBS):
+    for i in listTBS:
+        if i == valueTBF:
+            return "found element in list at position {}".format(listTBS.index(valueTBF))
+    return "Element not found"
+
+Result_One = linearSearch(29,integers)
+Result_Two = linearSearch(39,integers)
+
+print(Result_One)
+print(Result_Two)
