@@ -51,3 +51,7 @@ def fibonnaci(n):
         return fibonnaci(n-2) + fibonnaci(n-1)
 
 print(fibonnaci(10))
+
+#Problem -- 6 (Reverse a string)
+word = 'Akshat'
+def reverseString(string):
