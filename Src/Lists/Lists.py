@@ -31,6 +31,7 @@ print(check) #true condition
 print(checkTwo) #false condition
 
 #sum of all elements in list
+#time complexity = o(n)
 def listSum(list):
     sum = 0
     for i in range(0, len(list)):
@@ -38,3 +39,12 @@ def listSum(list):
     print(sum)
 
 listSum(integers)
+
+#insertion at the end --> o(n), insertion at the beginning --> o(n), insert anywhere --> o(n) , space complexity for all o(1)
+#same for delete
+
+integersWha = [1,2,3,4]
+integers.insert(2,22)
+integers.append(29)
+integers.extend(integersWha)
+print(integers)
