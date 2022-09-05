@@ -3,6 +3,8 @@
 #can also have a collection of all types
 
 #int type
+from multiprocessing.managers import ListProxy
+from socket import inet_aton
 from tabnanny import check
 
 
@@ -24,4 +26,15 @@ print(sum)
 
 #checking for values --> returns either true of false
 check = 11 in integers
-print(check)
+checkTwo = 12 in integers
+print(check) #true condition
+print(checkTwo) #false condition
+
+#sum of all elements in list
+def listSum(list):
+    sum = 0
+    for i in range(0, len(list)):
+        sum = sum + integers[i]
+    print(sum)
+
+listSum(integers)
