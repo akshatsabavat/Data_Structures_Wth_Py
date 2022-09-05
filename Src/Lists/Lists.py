@@ -60,3 +60,5 @@ Result_Two = linearSearch(39,integers)
 
 print(Result_One)
 print(Result_Two)
+
+#space complexity for creating a list in o(n)
