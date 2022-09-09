@@ -39,11 +39,28 @@ def maxProduct(listTBC):
     list_Lenght = len(listTBC)
     maxProduct = 0
 
-    for i in range(0,list_Lenght - 1):
-        for j in range(i,list_Lenght - 1):
+    for i in range(list_Lenght):
+        for j in range(i+1,list_Lenght):
             if listTBC[i] * listTBC[j] > maxProduct:
                 maxProduct = listTBC[i] * listTBC[j]
-    return maxProduct
+                maxProduct_pairs = str(listTBC[i]) + "," + str(listTBC[j])
+    print(maxProduct_pairs)
 
-result = maxProduct(Third_Prob_List)
-print(result)
+#maxProduct(Third_Prob_List);
+
+#Q4. Check if each element in the given list is unique or not
+good_Array = [10,22,1,3,4,6,7,9,45]
+bad_Array = [90,2,3,4,10,11,6,7,90]
+
+def checkUnique(listTBC):
+    string = "array is unique"
+    a = []
+    for i in range(len(listTBC)):
+        if listTBC[i] in a:
+            string = "array contains a duplicate for {}".format(listTBC[i])
+        else:
+            a.append(listTBC[i])
+    print(string)
+
+checkUnique(good_Array)
+checkUnique(bad_Array)
