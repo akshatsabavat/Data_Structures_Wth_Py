@@ -58,7 +58,7 @@ def linearSearch(valueTBF, listTBS):
 Result_One = linearSearch(29,integers)
 Result_Two = linearSearch(39,integers)
 
-print(Result_One)
-print(Result_Two)
+# print(Result_One)
+# print(Result_Two)
 
 #space complexity for creating a list in o(n)

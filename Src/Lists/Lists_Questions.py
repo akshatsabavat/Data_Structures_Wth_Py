@@ -16,7 +16,7 @@ def findMissing(listTBC):
 # print(result)
 
 #Q2. find the number of pairs who's sum is equal to the given number
-#note if i = j --> (i,j) are n9ot valid pairs
+#note if i = j --> (i,j) are not valid pairs
 Second_Prob_List = [2,7,11,15,-2,-6]
 target = 9
 
